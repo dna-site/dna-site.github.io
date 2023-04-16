@@ -11,175 +11,152 @@
   </head>
   <style>
     body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
     }
+
     .top-bar {
-        position: fixed;
-        width: 100%;
-        height: 60px;
-        background-color: #ff9800;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        z-index: 100;
-        padding: 0 20px;
-        box-sizing: border-box;
+      position: fixed;
+      width: 100%;
+      height: 60px;
+      background-color: #ff9800;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 100;
+      padding: 0 20px;
+      box-sizing: border-box;
     }
 
     .logo {
-        height: 40px;
+      height: 40px;
     }
 
     .nav {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
     }
 
     .nav li {
-        margin-left: 20px;
+      margin-left: 20px;
     }
 
     .nav a {
-        text-decoration: none;
-        color: #ffffff;
-        font-weight: bold;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
     }
 
     .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding-top: 80px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .side-images {
+      flex: 0 0 15%;
+      padding: 20px;
+    }
+
+    .side-images img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .items {
+      flex: 0 0 70%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
 
     .item {
-        width: calc(20% - 20px);
-        background-color: #ffffff;
-        border: 1px solid #ddd;
-        margin-bottom: 20px;
-        padding: 20px;
-        box-sizing: border-box;
-        text-align: center;
+      width: calc(20% - 20px);
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
     }
 
     .item img {
-        max-width: 100%;
+      max-width: 100%;
     }
 
     .item h3 {
-        margin: 10px 0;
+      margin: 10px 0;
     }
 
     .item button {
-        background-color: #ff9800;
-        border: none;
-        color: #ffffff;
-        padding: 10px 20px;
-        font-size: 14px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
+      background-color: #ff9800;
+      border: none;
+      color: #ffffff;
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
 
     .item button:hover {
-        background-color: #e78800;
+      background-color: #e78800;
     }
   </style>
-<body>
+  <body>
     <header class="top-bar">
-        <img src="https://yt3.googleusercontent.com/TiLVDuoloLgVsOPwIgvt0vhpnRMSJepdOdSTpC1NHuYVYmt99Lvbllpw_oQGJqESLQs34CG4=s900-c-k-c0x00ffffff-no-rj" alt="Logo" class="logo">
-        <nav>
-            <ul class="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+      <img src="example-logo.png" alt="Logo" class="logo">
+      <nav>
+        <ul class="nav">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Shop</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <section class="container">
+      <!-- Side images -->
+      <div class="side-images">
+        <img src="side-image-1.jpg" alt="Side Image 1">
+        <img src="side-image-2.jpg" alt="Side Image 2">
+        <!-- Add more side images here -->
+      </div>
+      <!-- Items -->
+      <div class="items">
         <!-- Add your item panels here, example provided -->
         <div class="item">
-            <img src="https://yt3.googleusercontent.com/TiLVDuoloLgVsOPwIgvt0vhpnRMSJepdOdSTpC1NHuYVYmt99Lvbllpw_oQGJqESLQs34CG4=s900-c-k-c0x00ffffff-no-rjg" alt="Item 1">
-            <h3>Item 1</h3>
-            <p>$25.00</p>
-            <button>Add to Cart</button>
+          <img src="item-1.jpg" alt="Item 1 <img src=" item-1.jpg" alt="Item 1">
+          <h3>Item 1</h3>
+          <p>$25.00</p>
+          <button>Add to Cart</button>
+          <img src="item-1.jpg" alt="Item 2 <img src=" item-1.jpg" alt="Item 1">
+          <h3>Item 1</h3>
+          <p>$25.00</p>
+          <button>Add to Cart</button>
         </div>
-        <div class="item">
-            <img src="https://yt3.googleusercontent.com/TiLVDuoloLgVsOPwIgvt0vhpnRMSJepdOdSTpC1NHuYVYmt99Lvbllpw_oQGJqESLQs34CG4=s900-c-k-c0x00ffffff-no-rjg" alt="Item 1">
-            <h3>Item 1</h3>
-            <p>$25.00</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="item">
-            <img src="https://yt3.googleusercontent.com/TiLVDuoloLgVsOPwIgvt0vhpnRMSJepdOdSTpC1NHuYVYmt99Lvbllpw_oQGJqESLQs34CG4=s900-c-k-c0x00ffffff-no-rjg" alt="Item 1">
-            <h3>Item 1</h3>
-            <p>$25.00</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="item">
-            <img src="https://yt3.googleusercontent.com/TiLVDuoloLgVsOPwIgvt0vhpnRMSJepdOdSTpC1NHuYVYmt99Lvbllpw_oQGJqESLQs34CG4=s900-c-k-c0x00ffffff-no-rjg" alt="Item 1">
-            <h3>Item 1</h3>
-            <p>$25.00</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="item">
-            <img src="https://yt3.googleusercontent.com/TiLVDuoloLgVsOPwIgvt0vhpnRMSJepdOdSTpC1NHuYVYmt99Lvbllpw_oQGJqESLQs34CG4=s900-c-k-c0x00ffffff-no-rjg" alt="Item 1">
-            <h3>Item 1</h3>
-            <p>$25.00</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="item">
-            <img src="https://yt3.googleusercontent.com/TiLVDuoloLgVsOPwIgvt0vhpnRMSJepdOdSTpC1NHuYVYmt99Lvbllpw_oQGJqESLQs34CG4=s900-c-k-c0x00ffffff-no-rjg" alt="Item 1">
-            <h3>Item 1</h3>
-            <p>$25.00</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="item">
-            <img src="https://yt3.googleusercontent.com/TiLVDuoloLgVsOPwIgvt0vhpnRMSJepdOdSTpC1NHuYVYmt99Lvbllpw_oQGJqESLQs34CG4=s900-c-k-c0x00ffffff-no-rjg" alt="Item 1">
-            <h3>Item 1</h3>
-            <p>$25.00</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="item">
-            <img src="https://yt3.googleusercontent.com/TiLVDuoloLgVsOPwIgvt0vhpnRMSJepdOdSTpC1NHuYVYmt99Lvbllpw_oQGJqESLQs34CG4=s900-c-k-c0x00ffffff-no-rjg" alt="Item 1">
-            <h3>Item 1</h3>
-            <p>$25.00</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="item">
-            <img src="https://yt3.googleusercontent.com/TiLVDuoloLgVsOPwIgvt0vhpnRMSJepdOdSTpC1NHuYVYmt99Lvbllpw_oQGJqESLQs34CG4=s900-c-k-c0x00ffffff-no-rjg" alt="Item 1">
-            <h3>Item 1</h3>
-            <p>$25.00</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="item">
-            <img src="https://yt3.googleusercontent.com/TiLVDuoloLgVsOPwIgvt0vhpnRMSJepdOdSTpC1NHuYVYmt99Lvbllpw_oQGJqESLQs34CG4=s900-c-k-c0x00ffffff-no-rjg" alt="Item 1">
-            <h3>Item 1</h3>
-            <p>$25.00</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="item">
-            <img src="https://yt3.googleusercontent.com/TiLVDuoloLgVsOPwIgvt0vhpnRMSJepdOdSTpC1NHuYVYmt99Lvbllpw_oQGJqESLQs34CG4=s900-c-k-c0x00ffffff-no-rjg" alt="Item 1">
-            <h3>Item 1</h3>
-            <p>$25.00</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="item">
-            <img src="https://yt3.googleusercontent.com/TiLVDuoloLgVsOPwIgvt0vhpnRMSJepdOdSTpC1NHuYVYmt99Lvbllpw_oQGJqESLQs34CG4=s900-c-k-c0x00ffffff-no-rjg" alt="Item 1">
-            <h3>Item 1</h3>
-            <p>$25.00</p>
-            <button>Add to Cart</button>
-        </div>
-           
         <!-- Duplicate the item div for more items -->
+      </div>
+      <!-- Side images -->
+      <div class="side-images">
+        <img src="assets/brand-pics/image-1.jpg" alt="Side Image 3">
+        <img src="side-image-4.jpg" alt="Side Image 4">
+        <!-- Add more side images here -->
+      </div>
     </section>
-</body>
+  </body>
 </html>
-
