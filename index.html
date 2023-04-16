@@ -9,9 +9,110 @@
     <script></script>
     <title>Dyzina DNA</title>
   </head>
-    
-    
-  <body>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+    }
+    .top-bar {
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        background-color: #ff9800;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 100;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
 
-  </body>
+    .logo {
+        height: 40px;
+    }
+
+    .nav {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav li {
+        margin-left: 20px;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .item {
+        width: calc(20% - 20px);
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .item img {
+        max-width: 100%;
+    }
+
+    .item h3 {
+        margin: 10px 0;
+    }
+
+    .item button {
+        background-color: #ff9800;
+        border: none;
+        color: #ffffff;
+        padding: 10px 20px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .item button:hover {
+        background-color: #e78800;
+    }
+  </style>
+<body>
+    <header class="top-bar">
+        <img src="https://yt3.googleusercontent.com/TiLVDuoloLgVsOPwIgvt0vhpnRMSJepdOdSTpC1NHuYVYmt99Lvbllpw_oQGJqESLQs34CG4=s900-c-k-c0x00ffffff-no-rj" alt="Logo" class="logo">
+        <nav>
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <!-- Add your item panels here, example provided -->
+        <div class="item">
+            <img src="https://yt3.googleusercontent.com/TiLVDuoloLgVsOPwIgvt0vhpnRMSJepdOdSTpC1NHuYVYmt99Lvbllpw_oQGJqESLQs34CG4=s900-c-k-c0x00ffffff-no-rjg" alt="Item 1">
+            <h3>Item 1</h3>
+            <p>$25.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Duplicate the item div for more items -->
+    </section>
+</body>
 </html>
+
